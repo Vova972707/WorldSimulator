@@ -22,24 +22,24 @@
     <ClCompile Include="src\Engine\Window.cpp">
       <Filter>src\Engine</Filter>
     </ClCompile>
-    <ClCompile Include="src\Engine\Shaders.cpp">
-      <Filter>src\Engine</Filter>
+    <ClCompile Include="src\Engine\Shaders\Shaders.cpp">
+      <Filter>src\Engine\Shaders</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\Engine\Window.h">
       <Filter>src\Engine</Filter>
     </ClInclude>
-    <ClInclude Include="src\Engine\Shaders.h">
-      <Filter>src\Engine</Filter>
+    <ClInclude Include="src\Engine\Shaders\Shaders.h">
+      <Filter>src\Engine\Shaders</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <Text Include="src\Engine\VertexShader.txt">
+    <None Include="src\Engine\Shaders\FragmentShader.fraq">
       <Filter>src\Engine\Shaders</Filter>
-    </Text>
-    <Text Include="src\Engine\Shaders\FragmentShader.txt">
+    </None>
+    <None Include="src\Engine\Shaders\VertexShader.vert">
       <Filter>src\Engine\Shaders</Filter>
-    </Text>
+    </None>
   </ItemGroup>
 </Project>

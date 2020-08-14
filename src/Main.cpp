@@ -4,8 +4,8 @@
 int main()
 {
 	initWindow(800, 600, "WorldSimulator");
-	initVertexShader("src\\Engine\\Shaders\\VertexShader.txt");
-	initFragmentShader("src\\Engine\\Shaders\\FragmentShader.txt");
+	initVertexShader("src\\Engine\\Shaders\\VertexShader.vert");
+	initFragmentShader("src\\Engine\\Shaders\\FragmentShader.fraq");
 	linkShaders();
 	releaseShaders();
 

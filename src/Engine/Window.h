@@ -4,7 +4,7 @@
 #include <iostream>
 #include <GL/glew.h>
 #include <GLFW/glfw3.h>
-#include "Shaders.h"
+#include "Shaders/Shaders.h"
 
 
 void initWindow(uint32_t width, uint32_t height, const char* title );

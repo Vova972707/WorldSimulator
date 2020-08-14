@@ -126,17 +126,17 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="src\Engine\Shaders.cpp" />
+    <ClCompile Include="src\Engine\Shaders\Shaders.cpp" />
     <ClCompile Include="src\Engine\Window.cpp" />
     <ClCompile Include="src\Main.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="src\Engine\Shaders.h" />
+    <ClInclude Include="src\Engine\Shaders\Shaders.h" />
     <ClInclude Include="src\Engine\Window.h" />
   </ItemGroup>
   <ItemGroup>
-    <Text Include="src\Engine\Shaders\FragmentShader.txt" />
-    <Text Include="src\Engine\VertexShader.txt" />
+    <None Include="src\Engine\Shaders\FragmentShader.fraq" />
+    <None Include="src\Engine\Shaders\VertexShader.vert" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
