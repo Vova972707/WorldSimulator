@@ -7,7 +7,7 @@
 #include "Shaders/Shaders.h"
 
 
-void initWindow(uint32_t width, uint32_t height, const char* title );
+void initWindow(uint32_t width, uint32_t height, const char* title, bool fullscreen);
 void registerVertices();
 void loop();
 void terminate();

@@ -11,7 +11,7 @@ GLfloat		_vertices[] = {
 	0.0f,  0.5f, 0.0f  // Top   
 };
 
-void initWindow(uint32_t width, uint32_t height, const char* title) {
+void initWindow(uint32_t width, uint32_t height, const char* title, bool fullscreen) {
 
 	glfwInit();
 	glfwWindowHint(GLFW_CONTEXT_VERSION_MAJOR, 3);
@@ -20,10 +20,11 @@ void initWindow(uint32_t width, uint32_t height, const char* title) {
 	glfwWindowHint(GLFW_RESIZABLE, GL_FALSE);
 
 	// Create a GLFWwindow object that we can use for GLFW's functions
-	_window = glfwCreateWindow(width, height, title, nullptr, nullptr);
+	_window = glfwCreateWindow(width, height, title, fullscreen ? glfwGetPrimaryMonitor() : nullptr, nullptr);
 	glfwMakeContextCurrent(_window);
 
 	glfwSetKeyCallback(_window, key_callback);
+	
 	glewExperimental = GL_TRUE;
 	glewInit();
 
